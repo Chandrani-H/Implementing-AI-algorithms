@@ -1,7 +1,6 @@
 
 /**
- *
- * @author chandrani96
+ * @author chandrani_halder
  */
 //THIS IS AN AI FOR TIC-TAC-TOE USING MAGIC SQUARE
 //A MAGIC SQUARE is a N*N square such that the DIGITS in each vertical, horizontal, and diagonal row add up to the same value
@@ -163,15 +162,18 @@ class TTT_magic
         
         for(int i=1;i<a;i++)
         {
-            brr[AI[i]]='X';
+            brr[AI[i]]='X'; 			//marking AI's move as 'X's
         }
         for(int i=1;i<p;i++)
         {
-            brr[Player[i]]='O';
+            brr[Player[i]]='O';			//marking AI's move as 'O's
         }
+	
+	//Printing the board
         System.out.println(brr[1]+" "+brr[2]+" "+brr[3]);
         System.out.println(brr[4]+" "+brr[5]+" "+brr[6]);
         System.out.println(brr[7]+" "+brr[8]+" "+brr[9]);
+	    
         //to check if draw occurs
         int c=0;
         for(int i=1; i<=9; i++)
