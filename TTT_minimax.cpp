@@ -1,7 +1,8 @@
 
 
-// C++ program to find the next optimal move for
-// a player
+// C++ program to build an AI that plays Tic-Tac-Toe
+// using Minimax Algorithm
+
 #include<bits/stdc++.h>
 using namespace std;
 
