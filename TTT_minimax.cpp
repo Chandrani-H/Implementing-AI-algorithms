@@ -244,12 +244,12 @@ int main()
         { '_', '_', '_' }
     };
     Move player_move;
-	while(isMovesLeft(board)==true)
+	while(isMovesLeft(board)==true)        //loop until there are moves left on board
 	{
 		player_move=user_input(board);    //calling user_input() to input opponent's move
 		board[player_move.row-1][player_move.col-1]=opponent;
 		display(board);
-		if(check_win(board)==1)
+		if(check_win(board)==1)                       //if there is a win on the board after opponent's move, opponent wins
 		{
 			cout<<"You win!"<<endl;
 			return 0;
@@ -260,7 +260,7 @@ int main()
                                   bestMove.col );
 		board[bestMove.row][bestMove.col]=player;     //playing the optimal move
 		display(board);
-		if(check_win(board)==1)
+		if(check_win(board)==1)                       //if there is a win on the board after AI's move, AI wins
 		{
 			cout<<"I win!"<<endl;
 			return 0;
