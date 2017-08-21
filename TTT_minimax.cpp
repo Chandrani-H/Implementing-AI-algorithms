@@ -237,7 +237,7 @@ int check_win(char board[3][3])
 // Driver code
 int main()
 {
-    char board[3][3] =
+    char board[3][3] =          //initializing empty tic-tac-toe board
     {
         { '_', '_', '_' },
         { '_', '_', '_' },
@@ -246,7 +246,7 @@ int main()
     Move player_move;
 	while(isMovesLeft(board)==true)
 	{
-		player_move=user_input(board);
+		player_move=user_input(board);    //calling user_input() to input opponent's move
 		board[player_move.row-1][player_move.col-1]=opponent;
 		display(board);
 		if(check_win(board)==1)
