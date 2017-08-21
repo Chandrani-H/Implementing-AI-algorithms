@@ -254,11 +254,11 @@ int main()
 			cout<<"You win!"<<endl;
 			return 0;
 		}
-		Move bestMove = findBestMove(board);
+		Move bestMove = findBestMove(board);          //storing the best move
 		printf("The Optimal Move is : \n");
-    	printf("ROW: %d COL: %d \n", bestMove.row,
+    	printf("ROW: %d COL: %d \n", bestMove.row,    //printing the optimal move
                                   bestMove.col );
-		board[bestMove.row][bestMove.col]=player;
+		board[bestMove.row][bestMove.col]=player;     //playing the optimal move
 		display(board);
 		if(check_win(board)==1)
 		{
