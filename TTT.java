@@ -80,8 +80,8 @@ class TTT_magic
                                             go(x,1);                      //block opponent's winning move
                                             System.out.println("Gotcha !");//prints "Gotcha!" everytime opponent is blocked
                                         }
-                                        else if(make_2()!=0)              //if AI can neither win nor block opponent's move, call make_2() to return 5 or 2, 4, 6 or 8
-                                        {
+                                        else if(make_2()!=0)              //if AI can neither win nor block opponent's move,
+                                        {                                 // call make_2() to return 5 or 2, 4, 6 or 8
                                             int x=  make_2();
                                             go(x,1);
                                         }
@@ -132,8 +132,8 @@ class TTT_magic
                                         }
                                         else if(make_2()!=0)
                                         {
-                                            int x=  make_2();                   //if AI can neither win nor block opponent's move, call make_2() to return 5 or 2, 4, 6 or 8
-                                            go(x,1);
+                                            int x=  make_2();                   //if AI can neither win nor block opponent's move,
+                                            go(x,1);                            // call make_2() to return 5 or 2, 4, 6 or 8
                                         }
                                         else                                    //unreachable case
                                         {
@@ -295,8 +295,8 @@ class TTT_magic
 			                D_pos=k;                  //MOVE stored in D_pos
 			            }
 
-			        
-			        if(D<=0 || D>9 || D==arr[AI[i]] || D==arr[AI[j]]|| i==j) //boxes aren't collinear
+			        //if D<=0 OR D>9, the boxes aren't collinear
+			        if(D<=0 || D>9 || D==arr[AI[i]] || D==arr[AI[j]]|| i==j) 
 			        {
                                                       //Do nothing
 
