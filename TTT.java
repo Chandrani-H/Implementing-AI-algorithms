@@ -304,12 +304,14 @@ class TTT_magic
 			        else                              //boxes are collinear
 			        {
 			            int temp=0;
-		                for(int l=1;l<a;l++)          //checking if AI has already played the turn
+			            //checking if AI has already played the turn
+		                for(int l=1;l<a;l++)          
 		                {
 			            if(AI[l]==D_pos)
 			            temp++;
 		                }
-                                for(int l=1;l<p;l++) //checking if Opponent has played the turn
+		                //checking if Opponent has played the turn
+                        for(int l=1;l<p;l++) 
 		                {
 			            if(Player[l]==D_pos)
 			            temp++;
