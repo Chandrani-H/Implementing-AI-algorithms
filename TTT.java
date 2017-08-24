@@ -281,14 +281,15 @@ class TTT_magic
 			    
                         /*
                         
-                        CALCULATES MAGIC_SQUARE_VALUE OF MOVE TO PLAY TO WIN= 15-(SUM OF 2 CO-LINEAR MOVES ON BOARD)
+                        CALCULATES MAGIC_SQUARE_VALUE OF MOVE TO PLAY TO WIN
+                        MOVE TO PLAY= 15-(SUM OF 2 CO-LINEAR MOVES ON BOARD)
                         SINCE ALL ROWS, COLUMNS AND DIAGONALS SUM UP TO 15 FOR 3*3 MAGIC SQUARE 
                         
                         */
                         
 			            D=15-(arr[AI[i]]+arr[AI[j]]);    
-
-			            for(int k=1; k<=9; k++)       //LOOKING FOR MOVE VALUE CORRESPONDING TO THE MAGIC_SQUARE_VALUE CALCULATED, D
+                        //LOOKING FOR MOVE VALUE CORRESPONDING TO THE MAGIC_SQUARE_VALUE CALCULATED, D
+			            for(int k=1; k<=9; k++)       
 			            {
 			                if(arr[k]==D)
 			                D_pos=k;                  //MOVE stored in D_pos
@@ -341,7 +342,8 @@ class TTT_magic
 			        {
                         /*
                         
-                        CALCULATES MAGIC_SQUARE_VALUE OF MOVE TO PLAY TO WIN= 15-(SUM OF 2 CO-LINEAR MOVES ON BOARD)
+                        CALCULATES MAGIC_SQUARE_VALUE OF MOVE TO PLAY TO WIN
+                        MOVE TO PLAY= 15-(SUM OF 2 CO-LINEAR MOVES ON BOARD)
                         SINCE ALL ROWS, COLUMNS AND DIAGONALS SUM UP TO 15 FOR 3*3 MAGIC SQUARE 
                         
                         */
